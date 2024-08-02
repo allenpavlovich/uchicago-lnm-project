@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.ipynb_checkpoints
+.DS_Store
+.env
+.vscode/
+.idea/
+.pytest_cache/
+data/processed/
+data/raw/
+data/external/
