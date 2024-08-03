@@ -91,20 +91,20 @@ This will discover and run all the test cases in the `tests` directory.
 ### Workflow
 
 1. **Create a Branch**:
-   \```sh
+   ```sh
    git checkout -b feature/new-analysis
-   \```
+   ```
 
 2. **Make Changes and Commit**:
-   \```sh
+   ```sh
    git add .
    git commit -m "Add exploratory data analysis for sentiment distribution"
-   \```
+   ```
 
 3. **Push Branch**:
-   \```sh
+   ```sh
    git push origin feature/new-analysis
-   \```
+   ```
 
 4. **Create a Pull Request**:
    - Go to the repository on GitHub.
@@ -119,7 +119,6 @@ This will discover and run all the test cases in the `tests` directory.
 
 ### Example Commands
 
-\```sh
 # Create a new branch for your feature
 git checkout -b feature/add-xai-methods
 
