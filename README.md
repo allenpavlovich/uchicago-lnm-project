@@ -29,10 +29,21 @@ This repository contains the project files for the Linear and Nonlinear Models c
 ├── .gitignore # Git ignore file
 
 
+### Getting Started
 
-## Getting Started
+#### Prerequisites
 
-1. Clone the repository:
+- Python 3.8+
+- Anaconda (recommended for environment management)
+
+#### Installation
+
+1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/uchicago-lnm-project.git
+   git clone https://github.com/allenpavlovich/uchicago-lnm-project.git
    cd uchicago-lnm-project
+
+2. **Create and activate the conda environment:**
+   ```sh
+   conda env create -f environment.yml
+   conda activate lnm_project
