@@ -8,26 +8,26 @@ This repository contains the project files for the Linear and Nonlinear Models c
 ├── data/
 │   ├── raw/                # Raw data files
 │   ├── processed/          # Processed data files ready for analysis
-│   ├── external/           # External datasets or additional data
 ├── notebooks/
+│   ├── causal_inference/   # Notebooks for causal inference analyses
 │   ├── exploratory/        # Notebooks for exploratory data analysis (EDA)
 │   ├── modeling/           # Notebooks for model development and tuning
 │   ├── xai/                # Notebooks for Explainable AI (XAI) techniques
-│   ├── causal_inference/   # Notebooks for causal inference analyses
+├── reports/
+│   ├── figures/            # Figures and plots for reports
+│   ├── final_report/       # Final project report
+│   ├── presentations/      # Slide decks for presentations
 ├── src/
+│   ├── causal_inference/   # Scripts for causal inference methods
 │   ├── data/               # Scripts for data preprocessing
 │   ├── features/           # Scripts for feature engineering
 │   ├── models/             # Scripts for training and evaluating models
-│   ├── xai/                # Scripts for XAI methods (LIME, SHAP)
-│   ├── causal_inference/   # Scripts for causal inference methods
-├── reports/
-│   ├── figures/            # Figures and plots for reports
-│   ├── presentations/      # Slide decks for presentations
-│   ├── final_report/       # Final project report
+│   ├── xai/                # Scripts for XAI methods (LIME, SHAP & etc.)
 ├── tests/                  # Unit tests and integration tests
-├── requirements.txt        # List of dependencies
+├── environement.yaml       # Environment and list of dependencies
 ├── README.md               # Project overview and setup instructions
 ├── .gitignore              # Git ignore file
+├── .gitattributes          # Git attributes file
 
 ```
 
@@ -48,22 +48,22 @@ This repository contains the project files for the Linear and Nonlinear Models c
 2. **Create and activate the conda environment:**
    ```sh
    conda env create -f environment.yml
-   conda activate lnm_project
+   conda activate uchicago_lnm_project
 
 ## Running Tests
 
 To run the unit tests for this project, follow these steps:
 
-1. Ensure you have all the dependencies installed. You can install them using:
+1. Ensure you have the Conda environment activated:
     ```sh
-    pip install -r requirements.txt
+    conda activate uchicago_lnm_project
     ```
 
 2. Navigate to the root directory of the project.
 
 3. Run the tests using the following command:
     ```sh
-    python -m unittest discover -s tests
+    python -m unittest discover -s tests -v
     ```
 
 This will discover and run all the test cases in the `tests` directory.
@@ -80,11 +80,7 @@ This will discover and run all the test cases in the `tests` directory.
    - Naming convention: `bugfix/description`
    - Example: `bugfix/fix-data-loading-error`
 
-3. **Hotfix Branches**:
-   - Naming convention: `hotfix/description`
-   - Example: `hotfix/critical-security-patch`
-
-4. **Experimental Branches**:
+3. **Experimental Branches**:
    - Naming convention: `experiment/description`
    - Example: `experiment/test-new-model`
 
