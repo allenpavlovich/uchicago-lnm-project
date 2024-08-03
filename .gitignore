@@ -7,6 +7,3 @@ __pycache__/
 .vscode/
 .idea/
 .pytest_cache/
-data/processed/
-data/raw/
-data/external/
