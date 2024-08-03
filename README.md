@@ -118,7 +118,7 @@ This will discover and run all the test cases in the `tests` directory.
    - Once approved, merge the pull request into the `main` branch.
 
 ### Example Commands
-    ```sh
+   ```sh
     # Create a new branch for your feature
     git checkout -b feature/add-xai-methods
 
@@ -131,4 +131,4 @@ This will discover and run all the test cases in the `tests` directory.
 
     # Create a pull request on GitHub and request a review
     # Once approved, merge the pull request
-    ```
+   ```
