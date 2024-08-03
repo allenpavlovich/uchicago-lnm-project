@@ -29,6 +29,8 @@ This repository contains the project files for the Linear and Nonlinear Models c
 ├── README.md               # Project overview and setup instructions
 ├── .gitignore              # Git ignore file
 
+```
+
 ### Getting Started
 
 #### Prerequisites
