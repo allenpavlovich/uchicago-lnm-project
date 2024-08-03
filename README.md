@@ -118,16 +118,17 @@ This will discover and run all the test cases in the `tests` directory.
    - Once approved, merge the pull request into the `main` branch.
 
 ### Example Commands
+    ```sh
+    # Create a new branch for your feature
+    git checkout -b feature/add-xai-methods
 
-# Create a new branch for your feature
-git checkout -b feature/add-xai-methods
+    # Make changes and commit
+    git add .
+    git commit -m "Implement SHAP and LIME for model explainability"
 
-# Make changes and commit
-git add .
-git commit -m "Implement SHAP and LIME for model explainability"
+    # Push the branch to the remote repository
+    git push origin feature/add-xai-methods
 
-# Push the branch to the remote repository
-git push origin feature/add-xai-methods
-
-# Create a pull request on GitHub and request a review
-# Once approved, merge the pull request
+    # Create a pull request on GitHub and request a review
+    # Once approved, merge the pull request
+    ```
