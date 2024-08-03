@@ -50,9 +50,6 @@ This repository contains the project files for the Linear and Nonlinear Models c
    conda env create -f environment.yml
    conda activate lnm_project
 
-
-
-
 ## Running Tests
 
 To run the unit tests for this project, follow these steps:
@@ -71,3 +68,67 @@ To run the unit tests for this project, follow these steps:
 
 This will discover and run all the test cases in the `tests` directory.
 
+## Contribution Guidelines
+
+### Branch Naming Conventions
+
+1. **Feature Branches**:
+   - Naming convention: `feature/description`
+   - Example: `feature/add-xai-methods`
+   
+2. **Bugfix Branches**:
+   - Naming convention: `bugfix/description`
+   - Example: `bugfix/fix-data-loading-error`
+
+3. **Hotfix Branches**:
+   - Naming convention: `hotfix/description`
+   - Example: `hotfix/critical-security-patch`
+
+4. **Experimental Branches**:
+   - Naming convention: `experiment/description`
+   - Example: `experiment/test-new-model`
+
+### Workflow
+
+1. **Create a Branch**:
+   \```sh
+   git checkout -b feature/new-analysis
+   \```
+
+2. **Make Changes and Commit**:
+   \```sh
+   git add .
+   git commit -m "Add exploratory data analysis for sentiment distribution"
+   \```
+
+3. **Push Branch**:
+   \```sh
+   git push origin feature/new-analysis
+   \```
+
+4. **Create a Pull Request**:
+   - Go to the repository on GitHub.
+   - Click on "Compare & pull request".
+   - Add a description of the changes and assign reviewers.
+   - Submit the pull request for review.
+
+5. **Review and Merge**:
+   - Team members review the pull request.
+   - Address any feedback and make necessary changes.
+   - Once approved, merge the pull request into the `main` branch.
+
+### Example Commands
+
+\```sh
+# Create a new branch for your feature
+git checkout -b feature/add-xai-methods
+
+# Make changes and commit
+git add .
+git commit -m "Implement SHAP and LIME for model explainability"
+
+# Push the branch to the remote repository
+git push origin feature/add-xai-methods
+
+# Create a pull request on GitHub and request a review
+# Once approved, merge the pull request
