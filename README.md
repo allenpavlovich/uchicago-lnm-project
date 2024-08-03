@@ -49,3 +49,25 @@ This repository contains the project files for the Linear and Nonlinear Models c
    ```sh
    conda env create -f environment.yml
    conda activate lnm_project
+
+
+
+
+## Running Tests
+
+To run the unit tests for this project, follow these steps:
+
+1. Ensure you have all the dependencies installed. You can install them using:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+2. Navigate to the root directory of the project.
+
+3. Run the tests using the following command:
+    ```sh
+    python -m unittest discover -s tests
+    ```
+
+This will discover and run all the test cases in the `tests` directory.
+
