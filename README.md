@@ -46,13 +46,13 @@ This repository contains the project files for the Linear and Nonlinear Models c
    cd uchicago-lnm-project
    ```
 
-2. **[WINDOWS] Create and activate the conda environment V1:**
+2. **Create and activate the conda environment V1:**
    ```sh
    conda env create -f environment_macos.yaml  # Using .yaml extension
    #[OPTIONAL] conda env update --file environment_macos.yaml --prune ## ONLY FOR MACOS USERS, IF ABOVE DOENS'T WORK
    conda activate uchicago_lnm_project
    ```
-   
+
 3. **Creating a Conda Environment Using Anaconda Navigator V2**
 
 To create a conda environment using the provided `environment.yaml` file via Anaconda Navigator, follow these steps:
