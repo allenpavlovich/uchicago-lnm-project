@@ -44,12 +44,13 @@ This repository contains the project files for the Linear and Nonlinear Models c
    ```sh
    git clone https://github.com/allenpavlovich/uchicago-lnm-project.git
    cd uchicago-lnm-project
+   ```
 
 2. **Create and activate the conda environment V1:**
    ```sh
    conda env create -f environment.yaml  # Using .yaml extension
    conda activate uchicago_lnm_project
-
+   ```
 
 3. **Creating a Conda Environment Using Anaconda Navigator V2**
 
