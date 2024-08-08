@@ -35,7 +35,7 @@ This repository contains the project files for the Linear and Nonlinear Models c
 
 #### Prerequisites
 
-- Python 3.8+
+- Python 3.10.13
 - Anaconda (recommended for environment management)
 
 #### Installation
