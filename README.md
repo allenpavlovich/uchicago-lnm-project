@@ -45,10 +45,51 @@ This repository contains the project files for the Linear and Nonlinear Models c
    git clone https://github.com/allenpavlovich/uchicago-lnm-project.git
    cd uchicago-lnm-project
 
-2. **Create and activate the conda environment:**
+2. **Create and activate the conda environment V1:**
    ```sh
-   conda env create -f environment.yml
+   conda env create -f environment.yaml  # Using .yaml extension
    conda activate uchicago_lnm_project
+
+
+3. **Creating a Conda Environment Using Anaconda Navigator V2**
+
+To create a conda environment using the provided `environment.yaml` file via Anaconda Navigator, follow these steps:
+
+1. **Open Anaconda Navigator**:
+   - Launch Anaconda Navigator from your applications menu or by running `anaconda-navigator` in your terminal.
+
+2. **Go to the Environments Tab**:
+   - Click on the "Environments" tab on the left sidebar.
+
+3. **Import the Environment**:
+   - Click on the "Import" button located at the bottom of the environments list.
+
+4. **Select the `environment.yaml` File**:
+   - In the dialog that appears, click the folder icon to navigate to the location of your `environment.yaml` file.
+   - Select the `environment.yaml` file and click "Open".
+
+5. **Name the Environment**:
+   - In the "Name" field, enter a name for the new environment (e.g., `YOUR_ENV_NAME`).
+
+6. **Create the Environment**:
+   - Click the "Import" button to create the environment from the YAML file.
+
+7. **Activate the Environment**:
+   - Once the environment is created, you can activate it via the terminal.
+   - Open a terminal window and activate the environment with the following command:
+   
+     ```sh
+     conda activate YOUR_ENV_NAME
+     ```
+
+8. **Start Working on Your Project**:
+   - Navigate to your project directory if not already there:
+
+     ```sh
+     cd /path/to/your/project
+     ```
+
+   - Now you can start working on your project with the newly created environment.   
 
 ## Running Tests
 
