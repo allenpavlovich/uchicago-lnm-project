@@ -49,6 +49,7 @@ This repository contains the project files for the Linear and Nonlinear Models c
 2. **Create and activate the conda environment V1:**
    ```sh
    conda env create -f environment.yaml  # Using .yaml extension
+   conda env update --file environment_macos.yaml --prune ## ONLY FOR MACOS USERS
    conda activate uchicago_lnm_project
    ```
 
