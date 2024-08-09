@@ -1,8 +1,8 @@
-# src/models/train_naive_bayes.py
+# src/models/train_svm.py
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
@@ -16,9 +16,9 @@ def vectorize_text(df, max_features=1000):
     X = tfidf.fit_transform(df['clean_text'])
     return X, tfidf
 
-def train_naive_bayes(X, y):
-    """Train a Naive Bayes model on the given features and labels."""
-    model = MultinomialNB()
+def train_svm(X, y):
+    """Train an SVM model on the given features and labels."""
+    model = SVC(kernel='linear', C=1)
     model.fit(X, y)
     return model
 
@@ -40,7 +40,7 @@ def run_training_pipeline(data_path, model_path, vectorizer_path):
     df = df.dropna(subset=['clean_text'])
     X, tfidf = vectorize_text(df)
     y = df['label']
-    model = train_naive_bayes(X, y)
+    model = train_svm(X, y)
     accuracy, report = evaluate_model(model, X, y)
     print(f"Model Accuracy: {accuracy}")
     print(f"Classification Report:\n{report}")
@@ -49,6 +49,6 @@ def run_training_pipeline(data_path, model_path, vectorizer_path):
 if __name__ == "__main__":
     run_training_pipeline(
         data_path='../../data/processed/cleaned_data.csv',
-        model_path='../../models/naive_bayes_model.pkl',
-        vectorizer_path='../../models/tfidf_vectorizer_nb.pkl'
+        model_path='../../models/svm_model.pkl',
+        vectorizer_path='../../models/tfidf_vectorizer_svm.pkl'
     )

@@ -9,7 +9,6 @@ This repository contains the project files for the Linear and Nonlinear Models c
 │   ├── raw/                # Raw data files
 │   ├── processed/          # Processed data files ready for analysis
 ├── notebooks/
-│   ├── causal_inference/   # Notebooks for causal inference analyses
 │   ├── exploratory/        # Notebooks for exploratory data analysis (EDA)
 │   ├── modeling/           # Notebooks for model development and tuning
 │   ├── xai/                # Notebooks for Explainable AI (XAI) techniques
@@ -18,7 +17,6 @@ This repository contains the project files for the Linear and Nonlinear Models c
 │   ├── final_report/       # Final project report
 │   ├── presentations/      # Slide decks for presentations
 ├── src/
-│   ├── causal_inference/   # Scripts for causal inference methods
 │   ├── data/               # Scripts for data preprocessing
 │   ├── features/           # Scripts for feature engineering
 │   ├── models/             # Scripts for training and evaluating models
