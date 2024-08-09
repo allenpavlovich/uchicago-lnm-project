@@ -99,4 +99,7 @@ def preprocess_data(df: pd.DataFrame, column: str) -> pd.DataFrame:
     # Preprocess the text
     df['clean_text'] = df['clean_text'].apply(preprocess_text)
 
+    # Drop NaN values
+    df = df.dropna(subset=['clean_text'])
+
     return df
