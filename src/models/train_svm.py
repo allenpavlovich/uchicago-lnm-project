@@ -18,7 +18,7 @@ def vectorize_text(df, max_features=1000):
 
 def train_svm(X, y):
     """Train an SVM model on the given features and labels."""
-    model = SVC(kernel='linear', C=1)
+    model = SVC(kernel='linear', C=1, verbose= True)
     model.fit(X, y)
     return model
 

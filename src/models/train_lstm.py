@@ -35,7 +35,6 @@ def build_lstm_model(embedding_dim=128, max_sequence_length=150):
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
     return model
 
-
 def train_lstm_model(X, y, model, batch_size=256, epochs=50):
     """Train the LSTM model with early stopping."""
     early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
