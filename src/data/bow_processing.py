@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import pickle
 import os
 
-def create_bow_features(input_csv, max_features=2500):
+def create_bow_features(input_csv, max_features=1000):
     """
     Creates Bag of Words features from the cleaned text data and adds sentiment labels.
 
@@ -87,7 +87,7 @@ def load_bow_features(bow_path, model_path):
     return bow_df, cv
 
 # Main function to create and save BoW features and model
-def process_and_save_bow(input_csv, bow_output_path, model_output_path, max_features=2500):
+def process_and_save_bow(input_csv, bow_output_path, model_output_path, max_features=1000):
     """
     Processes the input CSV to create BoW features and saves the results.
 
