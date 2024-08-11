@@ -2,7 +2,8 @@
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.svm import SVC
+#from sklearn.svm import SVC
+from sklearn.svm import LinearSVC
 from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
@@ -17,8 +18,8 @@ def vectorize_text(df, max_features=1000):
     return X, tfidf
 
 def train_svm(X, y):
-    """Train an SVM model on the given features and labels."""
-    model = SVC(kernel='linear', C=1, verbose= True)
+    """Train a Linear SVM model on the given features and labels."""
+    model = model = LinearSVC(C=0.1, verbose=1)
     model.fit(X, y)
     return model
 
