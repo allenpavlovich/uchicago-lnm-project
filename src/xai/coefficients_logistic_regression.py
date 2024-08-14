@@ -26,7 +26,7 @@ def plot_top_coefficients(model, vectorizer):
     # Plot the coefficients
     plt.figure(figsize=(10, 6))
     top_coefs.plot(kind='barh', x='Feature', y='Coefficient', legend=False, color=['red' if x < 0 else 'blue' for x in top_coefs['Coefficient']])
-    plt.title('Top 3 Positive and Negative Coefficients in Logistic Regression')
+    plt.title('Top 5 Positive and Negative Coefficients in Logistic Regression')
     plt.xlabel('Coefficient')
     plt.ylabel('Feature')
     plt.savefig('../../reports/figures/xai/log_reg/logreg_top_coefficients.png')
