@@ -22,11 +22,11 @@ def explain_with_shap(model, X, vectorizer):
 
     # SHAP summary plot
     shap.summary_plot(shap_values, features=X.toarray(), feature_names=vectorizer.get_feature_names_out())
-    plt.savefig('../../reports/figures/xai/log_reg/shap_summary_logreg.png')
+    plt.savefig('../../reports/figures/xai/svm/shap_summary_logreg.png')
 
     # SHAP feature importance plot
     shap.summary_plot(shap_values, features=X.toarray(), feature_names=vectorizer.get_feature_names_out(), plot_type='bar')
-    plt.savefig('../../reports/figures/xai/log_reg/shap_feature_importance_logreg.png')
+    plt.savefig('../../reports/figures/xai/svm/shap_feature_importance_logreg.png')
 
 def run_shap_explanation(data_path, model_path, vectorizer_path):
     """Run the SHAP explanation pipeline."""
